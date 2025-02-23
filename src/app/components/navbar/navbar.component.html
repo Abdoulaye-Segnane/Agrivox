@@ -1,9 +1,15 @@
 <mat-toolbar color="primary">
-    <span>AgriVox</span>
+    <div class="logo"> 
+        <a class="navbar-brand" routerLink="/">
+            <img src="../images/logo.png" alt="Logo UVS">
+        </a> 
+    </div>
     <span class="spacer"></span>
-    <button mat-button routerLink="/">Accueil</button>
-    <button mat-button routerLink="/pages/market-prices">Prix du Marché</button>
-    <button mat-button routerLink="/weather">Météo Agricole</button>
+    <nav class="nav-links">
+      <button mat-button routerLink="/">Accueil</button>
+      <button mat-button routerLink="/market-prices">Prix du Marché</button>
+      <button mat-button routerLink="/pages/weather">Météo Agricole</button>
+    </nav>
   </mat-toolbar>
   <router-outlet></router-outlet>
   

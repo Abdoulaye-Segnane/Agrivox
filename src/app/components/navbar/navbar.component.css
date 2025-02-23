@@ -1,4 +1,70 @@
+/* Style général de la barre de navigation */
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo du site */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Espacement entre le logo et les liens */
 .spacer {
-    flex: 1;
+  flex-grow: 1;
+}
+
+/* Style des liens */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Ajoute un espacement entre les boutons */
+}
+
+/* Style des boutons */
+button[mat-button] {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* Effet au survol */
+button[mat-button]:hover {
+  background: #f4f3f6;
+  transform: scale(1.05);
+}
+
+/* Effet au clic */
+button[mat-button]:active {
+  transform: scale(0.95);
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 600px) {
+  mat-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
-  
+
+  .spacer {
+    display: none;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button[mat-button] {
+    width: 100%;
+    text-align: left;
+  }
+}
