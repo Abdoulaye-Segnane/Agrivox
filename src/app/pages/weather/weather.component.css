@@ -1,0 +1,10 @@
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  mat-card {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  

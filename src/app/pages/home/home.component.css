@@ -1,0 +1,24 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  mat-card {
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  mat-card:hover {
+    transform: scale(1.05);
+  }
+body{
+  background-image: url("../../media/pages/agriV ox.webp");
+}
